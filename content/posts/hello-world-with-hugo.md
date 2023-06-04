@@ -1,7 +1,7 @@
 ---
 title: "Hello World with Hugo"
 date: 2023-06-04T11:21:44+02:00
-draft: true
+draft: false
 tags: [hugo]
 ---
 
