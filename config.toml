@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "bawey's scribblings"
+
+[outputs]
+home = [ "HTML", "JSON"]
+
+[module]
+theme = "hugo-theme-relearn"
+[[module.imports]]
+  path = 'github.com/McShelby/hugo-theme-relearn'
+
+
