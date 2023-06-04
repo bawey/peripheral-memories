@@ -55,5 +55,3 @@ is working:
 ```bash
 hugo new posts/hello-world-with-hugo.md
 ```
-
-Besides, it seems that using a module one no longer needs to declare the active t
