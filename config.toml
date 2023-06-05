@@ -10,4 +10,5 @@ theme = "hugo-theme-relearn"
 [[module.imports]]
 path = "github.com/McShelby/hugo-theme-relearn"
 
-
+[params]
+disableInlineCopyToClipBoard = true
