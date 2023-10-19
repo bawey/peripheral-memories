@@ -15,7 +15,8 @@ such cases.
 
 Because in Rust every local variable must have a known-before, type-specific size. This is true, among the others,
 for integers and arrays (size is a part of array's type "signature", as in `[u8;42]`).
-However, the same is not true for slices - be it array slices or string slices (technically that's what `&str` is).
+However, the same is not true for slices - be it array slices or string slices (technically, that's what 
+[`str`](https://doc.rust-lang.org/std/primitive.str.html) is).
 Under the hood, it boils down to whether a type implements
 the [`std::marker::Sized`](https://doc.rust-lang.org/std/marker/trait.Sized.html) trait.
 
