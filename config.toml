@@ -1,6 +1,6 @@
 baseURL = "https://bawey.github.io/scribblings/"
 languageCode = "en-us"
-title = "bawey's scribblings"
+title = "peripheral memories"
 
 [outputs]
 home = ["HTML", "JSON"]
