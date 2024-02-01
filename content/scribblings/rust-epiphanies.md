@@ -5,9 +5,10 @@ draft: false
 tags: [ "rust" ]
 ---
 
-Sometimes learning can bring about that sense of incongruity when a key piece of information seems missing and the 
-entire picture doesn't quite add up. As I am trying to pick up some Rust right now, this is where I will be documenting 
-such cases.
+Learning can be fun and all but for these "it doesn't add up moments" when you need to 
+take a step back and figure out where the process of knowledge assimilation took a wrong turn.
+And while discovering the obvious is not too great in itself, having to re-discover it would be far worse.
+So here's a note supposed to save my future self some trouble should I decide to continue learning Rust one day.
 
 ## Why reference, as in `&str`?
 
@@ -72,6 +73,7 @@ So what's the deal with the `String` type itself?
 Well, it's just a wrapper pointing to some data on the heap and so:
 - there's nothing stopping it from being `Sized` (try printing `std::mem::size_of::<String>()`)
 - since it's not a `Copy`-implementing type - it is subject to Rust's ownership mechanism
+  - ⚠️ the _copy vs move semantics_ are a big thing in Rust so do yourself a favor and make sure you understand that well
 
 For more information on basic traits, check the [`std::marker`](https://doc.rust-lang.org/std/marker/index.html) module
 reference. 
